@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="251118_generator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="column" id="column_left">
+        </div>
+        <div class="column" id="column_middle">
+            <div class="row" id="top_row">
+                <p class="h1">
+                    CREATE YOUR SPACE
+                </p>
+                <p class="h2">
+                    Probier dich durch die Regler und erkunde die Umgebung.
+                    Manche Elemente lassen sich anklicken.
+                </p>
+            </div>
+            <div class="row" id="bottom_row">
+                <input type="range" id="backgroundimage" min="1" max="5" value="1" />
+                <input type="range" id="heightSlider" min="50" max="500" value="200" />
+                <input type="range" id="radiusSlider" min="10" max="100" value="100" />
+                <input type="range" id="bottomSlider" min="-100" max="500" value="450" />
+                <input type="range" id="leftSlider" min="500" max="1300" value="700" />
+                <input type="range" id="raketerotation" min="0" max="360" value="0" />
+                <input type="range" id="raketeleft" min="500" max="1300" value="600" />
+                <input type="range" id="raketebottom" min="50" max="600" value="300" />
+                <input type="range" id="planetenRotation" min="0" max="360" value="0" />
+                <input type="range" id="saturnTop" min="50" max="600" value="50" />
+                <input type="range" id="saturnLeft" min="500" max="1300" value="1000" />
+                <input type="range" id="saturnSize" min="2" max="20" value="15" />
+                <br>
+                <button id="downloadBtn">Download JPEG</button>
+            </div>
+        </div>
+         <div class="column" id="column_right">
+            <div class="sterne" id="sterne1"></div>
+            <div class="sterne"id="sterne2"></div>
+            <div id="planeten"></div>
+            <div id="saturn"></div>
+            <div id="element3"></div>
+            <div id="element1"></div>
+            <div id="element2"></div>
+            <div id="rakete"></div>
+
+        </div>
+    </div>
+    
+    <script src="251118_generator.js"></script>
+</body>
+</html>

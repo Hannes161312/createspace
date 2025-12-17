@@ -1,0 +1,248 @@
+body{
+    margin-left:  10vw;
+    margin-right: 10vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    height: 100vh;
+    background-image: url('hintergrund.jpeg');
+    background-size: cover;
+}
+
+#container{
+    display: flex;
+    column-gap: 20px;
+    row-gap: 10px;
+    height: 40vw;
+}
+
+.column{
+    width: 200px;
+}
+
+#column_left{
+    width: 10vw;
+    height: 40vw;
+    background-image: url('H1.svg');
+    background-size: 100% 100%;
+}
+
+#column_middle{
+    width: 25vw;
+    height: 40vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+#column_right{
+    /*border: 1px solid rgb(255, 255, 255);*/
+    width: 40vw;
+    height: 40vw;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    }
+
+
+.row{
+    width: 25vw;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+#top_row{
+    width: 25vw;
+    height: 10vw;
+}
+
+#bottom_row{
+    width: 25vw;
+    height: 28vw;
+    border-radius: 20px;
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: column;   /* Untereinander anordnen */
+    align-items: center;      /* Horizontal zentrieren */
+    justify-content: center;  /* Vertikal zentrieren (optional) */
+    gap: 10px;                /* Abstand zwischen den Inputs */
+}
+
+#element1{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 200px;
+    left: 900px;
+    rotate: 45deg;
+    transition: 2.0s;
+    background-image: 
+        linear-gradient(to right,
+                    rgb(89, 200, 255), 
+                    rgb(251, 43, 255))
+}
+
+#element1.element1-active{
+    height: 180px;
+    width: 180px;
+    left: 650px;
+    bottom: 480px;
+    rotate: -180deg;
+    background-image:
+        linear-gradient(to right,
+                    rgb(74, 13, 73), 
+                    rgb(23, 10, 66))
+}
+
+#element2{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 80px;
+    left: 580px;
+    rotate: -45deg;
+    transition: 2.0s;
+    background-image: 
+        linear-gradient(to right,
+                    rgb(255, 202, 89), 
+                    rgb(255, 96, 43))
+}
+
+#element3{
+    width: 200px;
+    position: absolute;
+    transition: all 2.0s ease;
+    background-image: 
+        linear-gradient(to top,
+                    rgb(26, 27, 30), 
+                    rgb(218, 218, 218))
+}
+
+#rakete{
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    transition: all 0.2s ease;
+    background-image: url('rakete.png');
+    background-size: cover;
+    transition: 2.0s ease; 
+        
+}
+
+input[type="range"] {
+  width: 250px;
+  height: 5px;
+  accent-color:  rgb(212, 14, 219);
+}
+
+.h1{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+    font-size: 14pt;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 1vw;
+    margin-bottom: 0.5vw;
+    width: 21vw;
+    color: rgb(212, 14, 219);
+}
+
+.h2{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 11pt;
+    margin: auto;
+    width: 21vw;
+    color: rgb(255, 255, 255);
+                    
+}
+
+#downloadBtn{
+    width: 250px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    
+    font-size: 11pt;
+    background-color: rgb(212, 14, 219);
+    color: white;
+    transition: 2.0s ease;
+}
+
+#downloadBtn:hover{
+    background-color:rgb(23, 10, 66);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.sterne{
+    position: absolute;
+    top: 2vw;
+    left: 48vw;
+    width: 40vw;
+    height: 40vw;
+    transition: 2.0s ease;
+}
+
+#sterne1{
+    background-image: url('sterne1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+    opacity: 0%;
+}
+
+#sterne2{
+    background-image: url('sterne2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+    opacity: 0%;
+}
+
+#planeten{
+    position: absolute;
+    top: 2vw;
+    left: 48vw;
+    width: 40vw;
+    height: 40vw;
+    background-image: url('planeten.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none;
+    rotate: 0deg;
+    transition: 2.0s ease;
+    opacity: 0%;
+}
+
+#saturn{
+    position: absolute;
+    top: 2vw;
+    left: 48vw;
+    width: 40vw;
+    height: 40vw;
+    
+    background-image: url('saturn.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: auto;
+    transition: 2.0s ease;
+}
